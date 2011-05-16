@@ -1,4 +1,6 @@
 MendicantUniversity::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
