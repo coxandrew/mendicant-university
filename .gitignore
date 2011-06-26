@@ -5,3 +5,4 @@ tmp/
 .rvmrc
 config/database.yml
 public/stylesheets/compiled
+TODO.md
