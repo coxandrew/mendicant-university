@@ -1,8 +1,15 @@
 MendicantUniversity::Application.routes.draw do
+  get "about/index"
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
   root :to => "home#index"
+  match "about" => "about#index"
+  match "alumni" => "alumni#index"
+  match "resources" => "resources#index"
+  match "projects" => "projects#index"
+  match "contact" => "contact#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

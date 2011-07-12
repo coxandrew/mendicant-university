@@ -1,14 +1,14 @@
 %navigation
   %ul
-    %li.active
-      = link_to "Home", "#"
-    %li
-      = link_to "About", "#"
-    %li
-      = link_to "Alumni", "#"
-    %li
-      = link_to "Resources", "#"
-    %li
-      = link_to "Projects", "#"
-    %li
-      = link_to "Contact", "#"
+    %li{ :class => ("active" if controller.controller_name == "home") }
+      = link_to "Home", root_path
+    %li{ :class => ("active" if controller.controller_name == "about") }
+      = link_to "About", about_path
+    %li{ :class => ("active" if controller.controller_name == "alumni") }
+      = link_to "Alumni", alumni_path
+    %li{ :class => ("active" if controller.controller_name == "resources") }
+      = link_to "Resources", resources_path
+    %li{ :class => ("active" if controller.controller_name == "projects") }
+      = link_to "Projects", projects_path
+    %li{ :class => ("active" if controller.controller_name == "contact") }
+      = link_to "Contact", contact_path
