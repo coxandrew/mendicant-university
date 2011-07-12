@@ -16,5 +16,5 @@ http_path = "/"
 
 preferred_syntax = :sass
 
-css_dir   = "tmp/stylesheets"
-sass_dir  = "app/views/stylesheets"
+# css_dir   = "tmp/stylesheets"
+# sass_dir  = "app/views/stylesheets"
