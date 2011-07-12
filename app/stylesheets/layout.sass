@@ -1,6 +1,117 @@
-$body_text: #333
+$announcement_bg: #dbdbdb
+$announcement_border: #b7b7b7
+$primary_red: #790000
+
+p
+  line-height: 1.4
 
 body
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
-  font-size: 90%
-  color: $body_text
+  width: 960px
+  margin: auto
+
+header
+  position: relative
+  margin-top: 10px
+  height: 39px
+
+  h1#logo
+    text-indent: -999px
+    position: absolute
+    height: 39px
+    width: 140px
+
+  navigation
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 100%
+    background: image-url("navbar-bg-edge.png") no-repeat 0 100%
+
+  ul
+    float: right
+    background: image-url("navbar-bg-edge.png") no-repeat 100% 100%
+
+    li
+      float: left
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active
+      display: block
+      padding: 4px 12px 16px
+      text-decoration: none
+      color: #000
+
+    li.active a:link,
+    li.active a:visited,
+    li.active a:hover,
+    li.active a:active,
+    li a:hover
+      background: image-url("navbar-bg-active.png") repeat-x 0 100%
+
+#main
+  clear: both
+  padding-top: 10px
+
+footer
+  clear: both
+  padding: 10px 0
+  text-align: center
+
+#splash
+  @include clearfix
+
+  #poster
+    float: left
+    width: 617px
+    height: 301px
+    background: image-url("photo-railsconf.jpg")
+
+  aside
+    position: relative
+    background: $announcement_bg
+    float: left
+    width: 343px
+    height: 301px
+
+    navigation
+      a:link,
+      a:visited,
+      a:hover,
+      a:active
+        display: block
+        text-decoration: none
+        background: $primary_red
+        color: #FFFFFF
+        font-size: 120%
+        padding: 9px 8px 10px
+        margin-left: 5px
+        margin-bottom: 1px
+
+      a:hover
+        background: $primary_red image-url("launchbar-active-bg.png") repeat-x 0 0
+        padding-left: 24px
+
+    #announcement
+      position: absolute
+      left: 0
+      bottom: 0
+      padding: 10px 8px 6px
+      font-size: 120%
+      @include single-text-shadow(#fff, 1px, 1px, 1px)
+
+      img
+        margin-top: 8px
+
+#intro
+  clear: both
+
+  h2
+    margin: 0.75em 0 0.25em
+    font:
+      family: Georgia, serif
+      size: 220%
+
+  p
+    font-size: 120%

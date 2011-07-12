@@ -14,4 +14,10 @@
     = yield(:header_bottom)
 
   %body
-    = yield
+    %header
+      = link_to root_path do
+        %h1#logo= "Mendicant University"
+      = render "shared/navigation"
+    #main
+      = yield
+    = render "shared/footer"
