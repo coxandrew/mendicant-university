@@ -1,9 +1,15 @@
-$announcement_bg: #dbdbdb
-$announcement_border: #b7b7b7
-$primary_red: #790000
+$primary-red: #790000
+$gray-border: #DDDDDD
+$announcement-bg: #dbdbdb
+$announcement-border: #b7b7b7
+$link-sidebar: #777777
 
 p
-  line-height: 1.4
+  line-height: 1.5
+
+h1, h2, h3, h4, h5, h6
+  font-family: Georgia, serif
+  margin: 1.25em 0 0.5em
 
 body
   width: 960px
@@ -17,6 +23,7 @@ header
   h1#logo
     text-indent: -999px
     position: absolute
+    margin: 0
     height: 39px
     width: 140px
     z-index: 2
@@ -53,8 +60,9 @@ header
       background: image-url("navbar-bg-active.png") repeat-x 0 100%
 
 #main
+  @include clearfix
   clear: both
-  padding-top: 10px
+  padding: 15px 0
 
 footer
   clear: both
@@ -72,7 +80,7 @@ footer
 
   aside
     position: relative
-    background: $announcement_bg
+    background: $announcement-bg
     float: left
     width: 343px
     height: 301px
@@ -84,7 +92,7 @@ footer
       a:active
         display: block
         text-decoration: none
-        background: $primary_red
+        background: $primary-red
         color: #FFFFFF
         font-size: 120%
         padding: 9px 8px 10px
@@ -92,7 +100,7 @@ footer
         margin-bottom: 1px
 
       a:hover
-        background: $primary_red image-url("launchbar-active-bg.png") repeat-x 0 0
+        background: $primary-red image-url("launchbar-active-bg.png") repeat-x 0 0
         padding-left: 24px
 
     #announcement
@@ -117,3 +125,46 @@ footer
 
   p
     font-size: 120%
+
+aside.sidebar
+  float: left
+  width: 220px
+
+  h2
+    margin-top: 0
+    padding-bottom: 0.25em
+    font-size: 120%
+    border-bottom: 1px solid $gray-border
+
+  ul
+    list-style-type: square
+    margin-left: 16px
+    color: $gray-border
+
+    li
+      margin: 0.75em 0
+
+    li.active
+      color: $primary-red
+      font-weight: bold
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active
+      text-decoration: none
+      color: $link-sidebar
+
+    a:hover
+      text-decoration: underline
+
+section#content
+  h3
+    font-size: 200%
+    margin-top: 0
+
+  h4
+    font-size: 160%
+
+body.two-column section#content
+  margin-left: 250px

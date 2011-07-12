@@ -1,0 +1,16 @@
+- content_for :sidebar do
+  %aside.sidebar
+    %h2 About
+
+    %ul
+      %li{ :class => ("active" if controller.action_name == "philosophy") }
+        = link_to "Philosophy", about_path
+      %li{ :class => ("active" if controller.action_name == "staff") }
+        = link_to "Staff", about_staff_path
+      %li
+        = link_to "Courses", about_courses_path
+        %ul
+          %li{ :class => ("active" if controller.action_name == "core_skills") }
+            = link_to "Ruby Core Skills", about_courses_core_skills_path
+          %li{ :class => ("active" if controller.action_name == "admissions") }
+            = link_to "Admissions", about_courses_admissions_path

@@ -1,11 +1,15 @@
 MendicantUniversity::Application.routes.draw do
-  get "about/index"
-
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
   root :to => "home#index"
-  match "about" => "about#index"
+
+  match "about" => "about#philosophy"
+  get "about/staff"
+  get "about/courses"
+  match "about/courses/core_skills" => "about#core_skills"
+  match "about/courses/admissions" => "about#admissions"
+
   match "alumni" => "alumni#index"
   match "resources" => "resources#index"
   match "projects" => "projects#index"

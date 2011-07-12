@@ -11,13 +11,15 @@
     = render "layouts/css"
     = csrf_meta_tag
 
-    = yield(:header_bottom)
+    = yield :header_bottom
 
-  %body
+  - sidebar = yield(:sidebar)
+  %body{ :class => ("two-column" if sidebar.present?) }
     %header
       = link_to root_path do
         %h1#logo= "Mendicant University"
       = render "shared/navigation"
     #main
+      = sidebar
       = yield
     = render "shared/footer"
