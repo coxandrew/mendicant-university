@@ -1,0 +1,27 @@
+/* line 7, ../../../app/stylesheets/theme.sass */
+html {
+  font-size: 100%;
+}
+
+/* line 10, ../../../app/stylesheets/theme.sass */
+body {
+  color: #555555;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 0.875em;
+}
+
+/* line 16, ../../../app/stylesheets/theme.sass */
+header {
+  background: url('/images/navbar-bg-border.png?1310423898') repeat-x 0 100%;
+  padding-bottom: 12px;
+}
+/* line 20, ../../../app/stylesheets/theme.sass */
+header h1#logo {
+  background: url('/images/logo.png?1309305445');
+}
+
+/* line 23, ../../../app/stylesheets/theme.sass */
+footer {
+  margin-top: 10px;
+  border-top: 1px solid #dddddd;
+}
