@@ -12,6 +12,7 @@ MendicantUniversity::Application.routes.draw do
 
   match "alumni" => "alumni#index"
   match "resources" => "resources#index"
+
   match "projects" => "projects#index"
   match "contact" => "contact#index"
 
