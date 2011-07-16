@@ -1,0 +1,206 @@
+/* line 3, ../../app/stylesheets/layout.sass */
+p {
+  line-height: 1.5;
+}
+
+/* line 6, ../../app/stylesheets/layout.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, serif;
+  margin: 1.25em 0 0.5em;
+}
+
+/* line 10, ../../app/stylesheets/layout.sass */
+body {
+  width: 960px;
+  margin: auto;
+}
+
+/* line 14, ../../app/stylesheets/layout.sass */
+header {
+  position: relative;
+  margin-top: 10px;
+  height: 39px;
+}
+/* line 19, ../../app/stylesheets/layout.sass */
+header h1#logo {
+  text-indent: -999px;
+  position: absolute;
+  margin: 0;
+  height: 39px;
+  width: 140px;
+  z-index: 2;
+}
+/* line 27, ../../app/stylesheets/layout.sass */
+header navigation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  background: url('/images/navbar-bg-edge.png?1310430573') no-repeat 0 100%;
+}
+/* line 35, ../../app/stylesheets/layout.sass */
+header ul {
+  float: right;
+  background: url('/images/navbar-bg-edge.png?1310430573') no-repeat 100% 100%;
+}
+/* line 39, ../../app/stylesheets/layout.sass */
+header ul li {
+  float: left;
+}
+/* line 42, ../../app/stylesheets/layout.sass */
+header ul a:link,
+header ul a:visited,
+header ul a:hover,
+header ul a:active {
+  display: block;
+  padding: 4px 12px 16px;
+  text-decoration: none;
+  color: black;
+}
+/* line 51, ../../app/stylesheets/layout.sass */
+header ul li.active a:link,
+header ul li.active a:visited,
+header ul li.active a:hover,
+header ul li.active a:active,
+header ul li a:hover {
+  background: url('/images/navbar-bg-active.png?1309305491') repeat-x 0 100%;
+}
+
+/* line 58, ../../app/stylesheets/layout.sass */
+#main {
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+  padding: 15px 0;
+}
+
+/* line 63, ../../app/stylesheets/layout.sass */
+footer {
+  clear: both;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* line 68, ../../app/stylesheets/layout.sass */
+#splash {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 71, ../../app/stylesheets/layout.sass */
+#splash #poster {
+  float: left;
+  width: 617px;
+  height: 301px;
+  background: url('/images/photo-railsconf.jpg?1310074817');
+}
+/* line 77, ../../app/stylesheets/layout.sass */
+#splash aside {
+  position: relative;
+  background: #dbdbdb;
+  float: left;
+  width: 343px;
+  height: 301px;
+}
+/* line 85, ../../app/stylesheets/layout.sass */
+#splash aside navigation a:link,
+#splash aside navigation a:visited,
+#splash aside navigation a:hover,
+#splash aside navigation a:active {
+  display: block;
+  text-decoration: none;
+  background: #790000;
+  color: white;
+  font-size: 120%;
+  padding: 9px 8px 10px;
+  margin-left: 5px;
+  margin-bottom: 1px;
+}
+/* line 98, ../../app/stylesheets/layout.sass */
+#splash aside navigation a:hover {
+  background: #790000 url('/images/launchbar-active-bg.png?1310422163') repeat-x 0 0;
+  padding-left: 24px;
+}
+/* line 102, ../../app/stylesheets/layout.sass */
+#splash aside #announcement {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px 8px 6px;
+  font-size: 120%;
+  text-shadow: white 1px 1px 1px;
+}
+/* line 110, ../../app/stylesheets/layout.sass */
+#splash aside #announcement img {
+  margin-top: 8px;
+}
+
+/* line 113, ../../app/stylesheets/layout.sass */
+#intro {
+  clear: both;
+}
+/* line 116, ../../app/stylesheets/layout.sass */
+#intro h2 {
+  margin: 0.75em 0 0.25em;
+  font-family: Georgia, serif;
+  font-size: 220%;
+}
+/* line 122, ../../app/stylesheets/layout.sass */
+#intro p {
+  font-size: 120%;
+}
+
+/* line 125, ../../app/stylesheets/layout.sass */
+aside.sidebar {
+  float: left;
+  width: 220px;
+}
+/* line 129, ../../app/stylesheets/layout.sass */
+aside.sidebar h2 {
+  margin-top: 0;
+  padding-bottom: 0.25em;
+  font-size: 120%;
+  border-bottom: 1px solid #dddddd;
+}
+/* line 135, ../../app/stylesheets/layout.sass */
+aside.sidebar ul {
+  list-style-type: square;
+  margin-left: 16px;
+  color: #dddddd;
+}
+/* line 140, ../../app/stylesheets/layout.sass */
+aside.sidebar ul li {
+  margin: 0.75em 0;
+}
+/* line 143, ../../app/stylesheets/layout.sass */
+aside.sidebar ul li.active {
+  color: #790000;
+  font-weight: bold;
+}
+/* line 147, ../../app/stylesheets/layout.sass */
+aside.sidebar ul a:link,
+aside.sidebar ul a:visited,
+aside.sidebar ul a:hover,
+aside.sidebar ul a:active {
+  text-decoration: none;
+  color: #777777;
+}
+/* line 154, ../../app/stylesheets/layout.sass */
+aside.sidebar ul a:hover {
+  text-decoration: underline;
+}
+
+/* line 158, ../../app/stylesheets/layout.sass */
+section#content h3 {
+  font-size: 200%;
+  margin-top: 0;
+}
+/* line 162, ../../app/stylesheets/layout.sass */
+section#content h4 {
+  font-size: 160%;
+}
+
+/* line 165, ../../app/stylesheets/layout.sass */
+body.two-column section#content {
+  margin-left: 250px;
+}
